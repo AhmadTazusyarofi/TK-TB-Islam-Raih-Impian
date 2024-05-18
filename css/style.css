@@ -61,7 +61,7 @@ body {
 }
 
 .navbar .form-inline .btn {
-  width: 70px;
+  width: 100px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -78,12 +78,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #000 !important;
-}
-
-.navbar-nav .nav-item:hover {
-  background-color: #f8f9fa;
-  border-radius: 1rem;
+  color: #0037ff !important;
 }
 
 .nav-item {
@@ -301,8 +296,8 @@ body {
 }
 
 .kepsek .container .visiMisi .visi h3 {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 100;
   letter-spacing: 2px;
 }
 
@@ -410,10 +405,6 @@ body {
   background-color: #ff0000;
 }
 
-.linkin {
-  background-color: #0077b5;
-}
-
 .jurusan {
   background-color: #f3f1f1;
   padding: 50px 0;
@@ -458,7 +449,9 @@ body {
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  transition:
+    transform 0.5s,
+    -webkit-transform 0.5s;
 }
 
 .jurusan .boxJurusan .perBox h3 {
@@ -475,12 +468,86 @@ body {
   color: #fff;
   width: 100%;
   height: 35px;
-  background-color: #0066ff;
+  background-color: #0037ff;
   font-size: 1rem;
   z-index: 2;
 }
 
 .jurusan .boxJurusan .perBox:hover img {
+  opacity: 0.6;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.pengajar {
+  background-color: #fff;
+  /* padding: 50px 0; */
+  margin-top: 30px;
+}
+
+.pengajar h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pengajar .box-pengajar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.pengajar .box-pengajar .perBox-pengajar {
+  position: relative;
+  margin: 10px;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.pengajar .box-pengajar .perBox-pengajar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition:
+    transform 0.5s,
+    -webkit-transform 0.5s;
+}
+
+.pengajar .box-pengajar .perBox-pengajar h3 {
+  position: absolute;
+  bottom: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  left: 0;
+  padding-left: 5px;
+  color: #fff;
+  width: 100%;
+  height: 35px;
+  background-color: #0037ff;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+.pengajar .box-pengajar .perBox-pengajar img {
   opacity: 0.6;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
@@ -553,74 +620,44 @@ body {
   color: #000;
 }
 
-.footer {
-  background-color: #263238;
-  padding-top: 25px;
-  padding-bottom: 50px;
-  margin-top: 125px;
-}
-
-.footerContactUs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.footerContactUs .perFooterContactUs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px 0;
-}
-
-.footerContactUs .perFooterContactUs p {
-  margin: 0 0 0 20px;
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
-
-.footerAbout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-}
-
-.footerAbout a {
-  margin: 5px 0;
-}
-
-.btn-newsletter {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.footerCopyright {
-  width: 100%;
+/* icon whatsapp */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 60px;
   height: 60px;
-  background-color: #111111;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
 }
 
-.footerCopyright p {
-  margin: 0;
+/* Styling for the WhatsApp icon */
+#icon-whatsapp {
+  margin-top: 9px;
+  font-size: 2.6rem;
 }
+
+/* Styling for the help text */
+.floating-whatsapp-text {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  width: 200px;
+  transform: translateY(-50%);
+  background-color: #ffff;
+  font-size: 13px;
+  color: black;
+  padding: 1px 8px;
+  border-radius: 10px;
+  text-align: left;
+  /* white-space: pre-wrap; */
+}
+
+/* icon whatsapp end */
 
 .ekstrakulikuler {
   display: -webkit-box;
@@ -862,6 +899,75 @@ body {
   width: 50%;
 }
 
+.footer {
+  background-color: #263238;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  margin-top: 125px;
+}
+
+.footerContactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footerContactUs .perFooterContactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+.footerContactUs .perFooterContactUs p {
+  margin: 0 0 0 20px;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.footerAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footerAbout a {
+  margin: 5px 0;
+}
+
+.btn-newsletter {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footerCopyright {
+  width: 100%;
+  height: 60px;
+  background-color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.footerCopyright p {
+  margin: 0;
+}
+
 iframe {
   width: 100%;
   height: 500px;
@@ -874,9 +980,7 @@ iframe {
   margin: 0;
 }
 
-/* CSS untuk layar ponsel */
 @media only screen and (max-width: 600px) {
-  /* atur ukuran atau tata letak logo untuk layar ponsel di sini */
   .logo {
     width: 100px;
     height: auto;
@@ -917,7 +1021,7 @@ iframe {
     margin: 0 0 20px 0;
   }
   .kepsek .container .visiMisi .visi h3 {
-    font-weight: 600;
+    font-weight: 300;
   }
   .kepsek .container .visiMisi .misi p {
     font-size: 1rem;
@@ -938,6 +1042,9 @@ iframe {
   .jurusan .boxJurusan .perBox {
     width: 300px;
     height: 200px;
+  }
+  .pengajar h1 {
+    font-size: 1rem;
   }
 }
 
@@ -969,6 +1076,9 @@ iframe {
   .jurusan .boxJurusan .perBox {
     width: 80%;
     height: 250px;
+  }
+  .pengajar h1 {
+    font-size: 2rem;
   }
   .containerArtikelHome .artikelHome .perArtikelHome {
     width: 100%;
@@ -1133,6 +1243,9 @@ iframe {
   .jurusan h2 {
     font-size: 1.5rem;
   }
+  .pengajar h2 {
+    font-size: 1.5rem;
+  }
   .jurusan .boxJurusan .perBox {
     width: 100%;
   }
@@ -1155,6 +1268,9 @@ iframe {
   }
   .pembinaEkstrakulikuler .perPembina {
     height: 200px;
+  }
+  .floating-whatsapp {
+    display: none;
   }
 }
 
@@ -1187,12 +1303,6 @@ iframe {
   }
   .perFooterContactUs p {
     font-size: 0.9em;
-  }
-}
-
-@media (max-width: 800px) {
-  .embed-responsive {
-    padding-bottom: 75%;
   }
 }
 /*# sourceMappingURL=style.css.map */
