@@ -95,7 +95,7 @@ body {
   }
 
   .satu {
-    background-image: url("../imgs/dekstop.jpeg");
+    background-image: url("assets/imgs/dekstop.jpeg");
   }
 
   .dua {
@@ -232,7 +232,7 @@ body {
 
 // kepsek
 .kepsek {
-  background-image: url("../images/bg-visimisi.png");
+  background-image: url("..assets/images/bg-visimisi.png");
   margin: 30px 0;
 
   .container {
@@ -278,63 +278,6 @@ body {
     }
   }
 }
-
-// //artikel
-.titleArtikel {
-  padding: 130px 0 20px 0;
-
-  h1 {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    letter-spacing: 0px;
-    font-weight: 600;
-  }
-}
-
-.artikel {
-  .perArtikel {
-    display: flex;
-    margin-bottom: 10px;
-
-    &:hover {
-      h3 {
-        color: rgb(14, 133, 231);
-        transition: 0.5s;
-      }
-    }
-
-    img {
-      width: 250px;
-      height: 150px;
-      margin-right: 20px;
-      border-radius: 10px;
-    }
-
-    h3 {
-      font-size: 1.7rem;
-      font-weight: 600;
-      color: #000;
-      line-height: 30px;
-    }
-
-    p {
-      color: #000;
-    }
-  }
-}
-
-// .artikelPagination {
-//     padding: 50px 0;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-//     span {
-//         padding: 5px 20px;
-//         border: 1px solid #000;
-//         margin: 0 10px;
-//     }
-// }
 
 // sosmed icon
 .iconBox {
@@ -438,68 +381,6 @@ body {
   transform: scale(1.2);
 }
 
-// Artikel Home
-.containerArtikelHome {
-  padding-top: 50px;
-
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-
-  .artikelHome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-
-    .perArtikelHome {
-      width: 350px;
-      margin: 10px;
-      text-decoration: none;
-      cursor: pointer;
-
-      &:hover {
-        h3 {
-          color: rgb(14, 108, 231);
-          transition: 0.3s;
-        }
-      }
-
-      img {
-        width: 100%;
-        height: 225px;
-        border-radius: 5%;
-        margin-bottom: 10px;
-      }
-
-      h3 {
-        font-size: 1.2rem;
-        text-align: center;
-        font-weight: 900;
-        color: #000;
-      }
-
-      small {
-        color: #000;
-
-        span {
-          color: rgb(14, 133, 231);
-          font-weight: 700;
-        }
-      }
-
-      p {
-        font-size: 0.9rem;
-        color: #000;
-      }
-    }
-  }
-}
-
 // footer
 .footer {
   background-color: #263238;
@@ -592,7 +473,7 @@ body {
       left: 0;
       bottom: 0;
       right: 0;
-      background-image: url("../images/4.jpeg");
+      background-image: url("../assets/images/4.jpeg");
       background-size: cover;
       background-position: top center;
       width: 100%;
@@ -673,42 +554,6 @@ body {
   flex-wrap: wrap;
 }
 
-// perArtikel.html
-.detailArtikel {
-  margin: 140px 0 70px 0;
-
-  h2 {
-    font-weight: 700;
-    margin: 0;
-    font-size: 2.5rem;
-  }
-}
-
-.imgArtikel {
-  width: 100%;
-  height: 700px;
-  margin-bottom: 50px;
-}
-
-.shareArtikel,
-.penulis {
-  p {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  img {
-    width: 60%;
-    height: 200px;
-    border-radius: 10px;
-    // transform: translateX(30%);
-  }
-
-  h4 {
-    font-weight: 600;
-  }
-}
-
 .containerIconShare {
   display: flex;
   flex-wrap: wrap;
@@ -728,21 +573,6 @@ body {
   position: fixed;
   right: 100px;
   top: 150px;
-}
-
-.mainDetailArtikel {
-  .row {
-    .col-md-8 {
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-weight: 600;
-      }
-    }
-  }
 }
 
 // kontak
@@ -787,19 +617,6 @@ iframe {
 }
 
 @media (max-width: 1000px) {
-  .shareArtikel,
-  .penulis {
-    img {
-      width: 80%;
-    }
-  }
-
-  .detailArtikel {
-    h2 {
-      font-size: 2rem;
-    }
-  }
-
   .kepsek {
     .container {
       img {
@@ -862,30 +679,6 @@ iframe {
 }
 
 @media (max-width: 995px) {
-  .artikel {
-    .perArtikel {
-      h3 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 0.9rem;
-      }
-    }
-  }
-
-  .containerArtikelHome {
-    .artikelHome {
-      .perArtikelHome {
-        width: 300px;
-
-        img {
-          height: 200px;
-        }
-      }
-    }
-  }
-
   .containerEkstra {
     height: 50vh;
   }
@@ -909,38 +702,6 @@ iframe {
       .perBox {
         width: 80%;
         height: 250px;
-      }
-    }
-  }
-
-  // home artikel
-  .containerArtikelHome {
-    .artikelHome {
-      .perArtikelHome {
-        width: 100%;
-
-        img {
-          height: 300px;
-        }
-      }
-    }
-  }
-
-  .artikel {
-    .perArtikel {
-      flex-direction: column;
-
-      img {
-        width: 100%;
-        height: 250px;
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-
-      .textArtikel {
-        h3 {
-          font-size: 1.7rem;
-        }
       }
     }
   }
@@ -982,13 +743,6 @@ iframe {
       }
     }
   }
-
-  .shareArtikel,
-  .penulis {
-    img {
-      width: 50%;
-    }
-  }
 }
 
 @media (max-width: 650px) {
@@ -996,16 +750,6 @@ iframe {
     .container {
       left: 0;
       bottom: 250px;
-    }
-  }
-
-  .imgArtikel {
-    height: 400px;
-  }
-
-  .detailArtikel {
-    h2 {
-      font-size: 1.7rem;
     }
   }
 }
@@ -1025,23 +769,6 @@ iframe {
     }
   }
 
-  // home artikel
-  .containerArtikelHome {
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    .artikelHome {
-      .perArtikelHome {
-        width: 100%;
-
-        img {
-          height: 250px;
-        }
-      }
-    }
-  }
-
   .title {
     h1 {
       font-size: 1.7rem;
@@ -1054,18 +781,6 @@ iframe {
 }
 
 @media (max-width: 450px) {
-  .shareArtikel,
-  .penulis {
-    img {
-      width: 80%;
-      height: 250px;
-    }
-  }
-
-  .imgArtikel {
-    height: 200px;
-  }
-
   .navbar {
     .navbar-brand {
       img {
@@ -1104,64 +819,6 @@ iframe {
       h3 {
         font-size: 0.9rem;
       }
-    }
-  }
-
-  .artikel {
-    .perArtikel {
-      img {
-        height: 200px;
-      }
-
-      .textArtikel {
-        h3 {
-          font-size: 1.5rem;
-        }
-
-        p {
-          font-size: 0.8rem;
-        }
-      }
-    }
-  }
-
-  .artikelPagination {
-    span {
-      padding: 5px 15px;
-      font-size: 0.9rem;
-      border: 1px solid #000;
-      margin: 0 5px;
-    }
-  }
-
-  .titleArtikel {
-    h1 {
-      text-align: center;
-    }
-  }
-
-  .artikel {
-    .perArtikel {
-      img {
-        height: 200px;
-      }
-
-      .textArtikel {
-        h3 {
-          font-size: 1.5rem;
-        }
-
-        p {
-          font-size: 0.8rem;
-        }
-      }
-    }
-  }
-
-  .artikelPagination {
-    span {
-      padding: 3px 10px;
-      font-size: 0.7rem;
     }
   }
 

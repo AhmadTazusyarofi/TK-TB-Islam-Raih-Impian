@@ -12,9 +12,10 @@
 
     <title>TK-TB ISLAM RAIH IMPIAN</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="imgs/logo111.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imgs/logo111.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -57,7 +58,7 @@
         <div class="container">
 
             <a class="navbar-brand" href="#">
-                <img src="imgs/logo111.png" alt="Logo SMK N 2 Purbalingga">
+                <img src="assets/imgs/logo111.png" alt="Logo SMK N 2 Purbalingga">
                 <h1>TK-TB ISLAM<br>Raih Impian</h1>
             </a>
 
@@ -95,22 +96,10 @@
 
     <!-- section start -->
 
-    <!-- <header class="masthead">
-        <div class="container d-flex align-items-center" style="margin-top: 80px;">
-            <img class="masthead-avatar mb-3 rounded-circle img-thumbnail" src="images/logo111.png" alt="ahmad"
-                style="width: 150px; height: 150px; margin-top: 20px;" />
-            <div class="ml-3 d-flex flex-column">
-                <h4>PROSEDUR PENERIMAAN PESERTA DIDIK BARU (PPDB) <br>
-                    KB-TK ISLAM RAIH IMPIAN <br>
-                    TAHUN AJARAN 2024-2025</h4>
-            </div>
-        </div>
-    </header> -->
-
     <header class="masthead">
         <div class="container d-flex flex-column align-items-md-start align-items-center" style="margin-top: 100px;">
             <div class="d-md-flex align-items-center">
-                <img class="masthead-avatar mb-3 rounded-circle img-thumbnail" src="imgs/logo111.png" alt="ahmad"
+                <img class="masthead-avatar mb-3 rounded-circle img-thumbnail" src="assets/imgs/logo111.png" alt="ahmad"
                     style="width: 150px; height: 150px;" data-aos="fade-right" data-aos-delay="400"
                     data-aos-duration="1000" />
                 <div class="ml-md-3 mt-md-0 mt-3" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
@@ -126,11 +115,11 @@
     <div class="container">
         <hr style="border: 1px solid #000;">
         <h4>A. BATAS USIA ANAK</h4>
-        <ul>
+        <ol>
             <li>Kelompok Bermain 3 tahun – 4 tahun</li>
             <li>Kelompok A 4 tahun – 5 tahun</li>
             <li>Kelompok B 5 tahun – 6 tahun</li>
-        </ul>
+        </ol>
 
         <hr style="border: 1px solid #000;">
         <h4>B. PERSYARATAN ADMINISTRASI</h4>
@@ -145,7 +134,7 @@
 
         <hr style="border: 1px solid #000;">
         <h4>C. DETAIL KEUANGAN</h4>
-        <table class="table table-striped">
+        <table class="table table-striped table-hover" id="financial-table">
             <thead>
                 <tr>
                     <th>Level</th>
@@ -187,6 +176,10 @@
                 </tr>
             </tbody>
         </table>
+
+        <i class="bi bi-chevron-double-left mr-4" id="chevron-icon-left" style="cursor: pointer;"></i>
+        <i class="bi bi-chevron-double-right" id="chevron-icon-right" style="cursor: pointer;"></i>
+
         <hr style="border: 1px solid #000;">
         <h4>D. KETENTUAN LAIN</h4>
         <ol>
@@ -292,6 +285,8 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
   font-family: "Poppins", sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -99,33 +100,15 @@ body {
 .slideshow img {
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-size: cover;
   object-fit: cover;
 }
 
-.slideshow .satu {
-  background-image: url("../images/5e72f65c1f909-teamwork-desktop2.jpg");
-}
-
-.slideshow .dua {
-  background-image: url("../images/5e72f74b99ff0-humility-desktop2.jpg");
-}
-
-.slideshow .tiga {
-  background-image: url("../images/5e72f72cca561-respect-desktop2.jpg");
-}
-
-.slideshow .empat {
-  background-image: url("../images/5e72f7134ca67-integrity-desktop2.jpg");
-}
-
-.slideshow .lima {
-  background-image: url("../images/5e72f6adbf417-commitment2-desktop.jpg");
-}
-
-.slideshow .enam {
-  background-image: url("../images/5e72f68fbd34a-excellent-desktop2.jpg");
+.formgroup img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
 }
 
 .slideshow .container {
@@ -309,48 +292,6 @@ body {
 .kepsek .container .visiMisi .misi p {
   font-size: 1.2rem;
   font-family: "PT Serif", sans-serif;
-}
-
-.titleArtikel {
-  padding: 130px 0 20px 0;
-}
-
-.titleArtikel h1 {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 0px;
-  font-weight: 600;
-}
-
-.artikel .perArtikel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.artikel .perArtikel:hover h3 {
-  color: #0e85e7;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.artikel .perArtikel img {
-  width: 250px;
-  height: 150px;
-  margin-right: 20px;
-  border-radius: 10px;
-}
-
-.artikel .perArtikel h3 {
-  font-size: 1.7rem;
-  font-weight: 600;
-  color: #000;
-  line-height: 30px;
-}
-
-.artikel .perArtikel p {
-  color: #000;
 }
 
 .iconBox {
@@ -553,73 +494,6 @@ body {
   transform: scale(1.2);
 }
 
-.containerArtikelHome {
-  padding-top: 50px;
-}
-
-.containerArtikelHome h2 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.containerArtikelHome .artikelHome {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.containerArtikelHome .artikelHome .perArtikelHome {
-  width: 350px;
-  margin: 10px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.containerArtikelHome .artikelHome .perArtikelHome:hover h3 {
-  color: #0e6ce7;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.containerArtikelHome .artikelHome .perArtikelHome img {
-  width: 100%;
-  height: 225px;
-  border-radius: 5%;
-  margin-bottom: 10px;
-}
-
-.containerArtikelHome .artikelHome .perArtikelHome h3 {
-  font-size: 1.2rem;
-  text-align: center;
-  font-weight: 900;
-  color: #000;
-}
-
-.containerArtikelHome .artikelHome .perArtikelHome small {
-  color: #000;
-}
-
-.containerArtikelHome .artikelHome .perArtikelHome small span {
-  color: #0e85e7;
-  font-weight: 700;
-}
-
-.containerArtikelHome .artikelHome .perArtikelHome p {
-  font-size: 0.9rem;
-  color: #000;
-}
-
 /* icon whatsapp */
 .floating-whatsapp {
   position: fixed;
@@ -713,7 +587,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url("../images/4.jpeg");
+  background-image: url("../assets/images/4.jpeg");
   background-size: cover;
   background-position: top center;
   width: 100%;
@@ -805,40 +679,6 @@ body {
   flex-wrap: wrap;
 }
 
-.detailArtikel {
-  margin: 140px 0 70px 0;
-}
-
-.detailArtikel h2 {
-  font-weight: 700;
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-.imgArtikel {
-  width: 100%;
-  height: 700px;
-  margin-bottom: 50px;
-}
-
-.shareArtikel p,
-.penulis p {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.shareArtikel img,
-.penulis img {
-  width: 60%;
-  height: 200px;
-  border-radius: 10px;
-}
-
-.shareArtikel h4,
-.penulis h4 {
-  font-weight: 600;
-}
-
 .containerIconShare {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -869,15 +709,6 @@ body {
   top: 150px;
 }
 
-.mainDetailArtikel .row .col-md-8 h1,
-.mainDetailArtikel .row .col-md-8 h2,
-.mainDetailArtikel .row .col-md-8 h3,
-.mainDetailArtikel .row .col-md-8 h4,
-.mainDetailArtikel .row .col-md-8 h5,
-.mainDetailArtikel .row .col-md-8 h6 {
-  font-weight: 600;
-}
-
 .kontak {
   margin: 150px 0 150px 0;
 }
@@ -897,6 +728,104 @@ body {
 
 .kontak form .formKontakKanan {
   width: 50%;
+}
+
+.contact-item p {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item p i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.contact-item p:last-child {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#gmail {
+  display: flex;
+  color: #25d366;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  margin-left: 5px;
+  margin-right: 13px;
+  align-items: center;
+  justify-content: center;
+}
+
+#lokasi {
+  color: rgb(227, 56, 56);
+}
+
+#telpon {
+  color: #1bc22e;
+}
+
+.icon-galeri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+#pramuka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 8rem;
+  color: #333;
+}
+
+#music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 8rem;
+  color: #333;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-detail {
+  padding: 7px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #2ba8fb;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+#btn-detail:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+#btn-detail:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
 }
 
 .footer {
@@ -950,34 +879,13 @@ body {
 }
 
 .footerCopyright {
+  background-color: #111;
   width: 100%;
   height: 60px;
-  background-color: #111111;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  flex-direction: column;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-}
-
-.footerCopyright p {
-  margin: 0;
-}
-
-iframe {
-  width: 100%;
-  height: 500px;
-  margin: 0;
-  -webkit-transform: translateY(6px);
-  transform: translateY(6px);
-}
-
-.footerHubungiKami {
-  margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -995,13 +903,6 @@ iframe {
 }
 
 @media (max-width: 1000px) {
-  .shareArtikel img,
-  .penulis img {
-    width: 80%;
-  }
-  .detailArtikel h2 {
-    font-size: 2rem;
-  }
   .kepsek .container img {
     margin-right: 30px;
   }
@@ -1048,24 +949,23 @@ iframe {
   }
 }
 
+@media (min-width: 900px) {
+  #chevron-icon-left,
+  #chevron-icon-right {
+    display: none;
+  }
+}
+
 @media (max-width: 995px) {
-  .artikel .perArtikel h3 {
-    font-size: 1.5rem;
-  }
-  .artikel .perArtikel p {
-    font-size: 0.9rem;
-  }
-  .containerArtikelHome .artikelHome .perArtikelHome {
-    width: 300px;
-  }
-  .containerArtikelHome .artikelHome .perArtikelHome img {
-    height: 200px;
-  }
   .containerEkstra {
     height: 50vh;
   }
   .footerContactUs .perFooterContactUs p {
     font-size: 0.7rem;
+  }
+  #financial-table.shifted {
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
   }
 }
 
@@ -1079,27 +979,6 @@ iframe {
   }
   .pengajar h1 {
     font-size: 2rem;
-  }
-  .containerArtikelHome .artikelHome .perArtikelHome {
-    width: 100%;
-  }
-  .containerArtikelHome .artikelHome .perArtikelHome img {
-    height: 300px;
-  }
-  .artikel .perArtikel {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .artikel .perArtikel img {
-    width: 100%;
-    height: 250px;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  .artikel .perArtikel .textArtikel h3 {
-    font-size: 1.7rem;
   }
   .kepsek .container {
     display: -webkit-box;
@@ -1131,10 +1010,6 @@ iframe {
   .footerContactUs .perFooterContactUs p {
     font-size: 1rem;
   }
-  .shareArtikel img,
-  .penulis img {
-    width: 50%;
-  }
 }
 
 @media (max-width: 650px) {
@@ -1142,11 +1017,9 @@ iframe {
     left: 0;
     bottom: 250px;
   }
-  .imgArtikel {
-    height: 400px;
-  }
-  .detailArtikel h2 {
-    font-size: 1.7rem;
+  .box-map {
+    width: 100% !important;
+    height: 300px !important;
   }
 }
 
@@ -1159,15 +1032,6 @@ iframe {
     width: 100%;
     height: 300px;
   }
-  .containerArtikelHome h2 {
-    font-size: 1.5rem;
-  }
-  .containerArtikelHome .artikelHome .perArtikelHome {
-    width: 100%;
-  }
-  .containerArtikelHome .artikelHome .perArtikelHome img {
-    height: 250px;
-  }
   .title h1 {
     font-size: 1.7rem;
   }
@@ -1177,14 +1041,6 @@ iframe {
 }
 
 @media (max-width: 450px) {
-  .shareArtikel img,
-  .penulis img {
-    width: 80%;
-    height: 250px;
-  }
-  .imgArtikel {
-    height: 200px;
-  }
   .navbar .navbar-brand img {
     width: 33px;
     height: 33px;
@@ -1208,37 +1064,6 @@ iframe {
   }
   .slideshow .container h3 {
     font-size: 0.9rem;
-  }
-  .artikel .perArtikel img {
-    height: 200px;
-  }
-  .artikel .perArtikel .textArtikel h3 {
-    font-size: 1.5rem;
-  }
-  .artikel .perArtikel .textArtikel p {
-    font-size: 0.8rem;
-  }
-  .artikelPagination span {
-    padding: 5px 15px;
-    font-size: 0.9rem;
-    border: 1px solid #000;
-    margin: 0 5px;
-  }
-  .titleArtikel h1 {
-    text-align: center;
-  }
-  .artikel .perArtikel img {
-    height: 200px;
-  }
-  .artikel .perArtikel .textArtikel h3 {
-    font-size: 1.5rem;
-  }
-  .artikel .perArtikel .textArtikel p {
-    font-size: 0.8rem;
-  }
-  .artikelPagination span {
-    padding: 3px 10px;
-    font-size: 0.7rem;
   }
   .jurusan h2 {
     font-size: 1.5rem;
