@@ -192,11 +192,16 @@ body {
   width: 250px;
   height: 150px;
   margin: 5px;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  object-fit: cover;
 }
 
 .perGaleri img:hover {
   opacity: 1;
   transform: scale(1.2);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .scroll {
@@ -587,7 +592,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url("../assets/images/4.jpeg");
+  background-image: url(".../assets/images/4.jpg");
   background-size: cover;
   background-position: top center;
   width: 100%;
@@ -703,6 +708,10 @@ body {
   border-radius: 4px;
 }
 
+#financial-table {
+  width: 100%;
+  white-space: nowrap;
+}
 .fixed {
   position: fixed;
   right: 100px;
@@ -751,6 +760,27 @@ body {
   text-overflow: ellipsis;
 }
 
+.tenaga-pengajar {
+  margin-top: 7rem;
+}
+
+.card-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* .card-pengajar-staff {
+  transition:
+    transform 0.5s,
+    box-shadow 0.5s;
+} */
+
+.card-pengajar-staff:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
 #gmail {
   display: flex;
   color: #25d366;
@@ -779,6 +809,14 @@ body {
   cursor: pointer;
 }
 
+.card {
+  transition: box-shadow 0.1s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 #pramuka {
   display: flex;
   justify-content: center;
@@ -801,6 +839,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
 }
 
 #btn-detail {
@@ -809,7 +848,6 @@ body {
   border-radius: 100px;
   background-color: #2ba8fb;
   color: #ffffff;
-  font-weight: Bold;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
@@ -843,6 +881,16 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.perFooterImg img {
+  width: 9rem;
+  margin-top: 2px;
+}
+
+.join-with-us {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .footerContactUs .perFooterContactUs {
@@ -900,6 +948,9 @@ body {
     width: 375px;
     height: 225px;
   }
+  .d-grid.gap-2.d-md-block > .btn {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -946,6 +997,35 @@ body {
   }
   .pengajar h1 {
     font-size: 1rem;
+  }
+
+  .d-grid.gap-2.d-md-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Mengatur agar tombol-tombol sejajar secara vertikal dengan yang di atas */
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+  .card-text {
+    font-size: 8px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .bordered-paragraph {
+    font-size: 10px;
+  }
+  .col-md-3 {
+    width: 50%;
   }
 }
 
@@ -1010,6 +1090,28 @@ body {
   .footerContactUs .perFooterContactUs p {
     font-size: 1rem;
   }
+
+  .footerContactUs {
+    text-align: center;
+  }
+
+  .perFooterImg {
+    width: 100%;
+  }
+  .img-fluid {
+    width: 100%;
+  }
+  .col-md-3 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .card-pengajar img {
+    width: 100%;
+    height: auto;
+  }
+  .card-body {
+    text-align: center;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1020,6 +1122,18 @@ body {
   .box-map {
     width: 100% !important;
     height: 300px !important;
+  }
+  .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .card-pengajar img {
+    width: 100%;
+    height: auto;
+  }
+  .card-body {
+    text-align: center;
+    font-size: 8px;
   }
 }
 
@@ -1097,6 +1211,16 @@ body {
   .floating-whatsapp {
     display: none;
   }
+  .col-md-3 {
+    max-width: 50%;
+  }
+  .card-pengajar img {
+    width: 100%;
+    height: auto;
+  }
+  .card-body {
+    text-align: center;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1130,4 +1254,5 @@ body {
     font-size: 0.9em;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

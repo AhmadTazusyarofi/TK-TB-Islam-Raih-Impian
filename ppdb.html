@@ -11,7 +11,7 @@
     <meta name="description" content="">
 
     <title>TK-TB ISLAM RAIH IMPIAN</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="components/css/style.css">
     <link rel="shortcut icon" href="assets/imgs/logo111.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -89,7 +89,7 @@
 
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
                             <a class="dropdown-item" href="ekstrakulikuler.html">Ekstrakulikuler</a>
-                            <a class="dropdown-item" href="pengajar.html">Tenaga Pengajar</a>
+                            <a class="dropdown-item" href="pengajar.html">Guru dan Staff</a>
                         </div>
                     </li>
             </div>
@@ -138,51 +138,53 @@
 
         <hr style="border: 1px solid #000;">
         <h4>C. DETAIL KEUANGAN</h4>
-        <table class="table table-striped table-hover" id="financial-table">
-            <thead>
-                <tr>
-                    <th>Level</th>
-                    <th>Biaya Pengembangan</th>
-                    <th>Uang Kegiatan</th>
-                    <th>Uang Alat Pembelajaran</th>
-                    <th>Seragam</th>
-                    <th>SPP Bulan Juli 2023</th>
-                    <th>Jumlah</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Kelompok Bermain</td>
-                    <td>Rp 3.000.000</td>
-                    <td>Rp 1.700.000</td>
-                    <td>Rp 750.000</td>
-                    <td>Rp 800.000</td>
-                    <td>Rp 500.000</td>
-                    <td>Rp 6.750.000</td>
-                </tr>
-                <tr>
-                    <td>Kelompok A</td>
-                    <td>Rp 3.000.000</td>
-                    <td>Rp 1.700.000</td>
-                    <td>Rp 750.000</td>
-                    <td>Rp 800.000</td>
-                    <td>Rp 500.000</td>
-                    <td>Rp 6.750.000</td>
-                </tr>
-                <tr>
-                    <td>Kelompok B</td>
-                    <td>Rp 3.000.000</td>
-                    <td>Rp 2.000.000</td>
-                    <td>Rp 750.000</td>
-                    <td>Rp 800.000</td>
-                    <td>Rp 500.000</td>
-                    <td>Rp 7.050.000</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" id="financial-table">
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Biaya Pengembangan</th>
+                        <th>Uang Kegiatan</th>
+                        <th>Uang Alat Pembelajaran</th>
+                        <th>Seragam</th>
+                        <th>SPP Bulan Juli 2023</th>
+                        <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kelompok Bermain</td>
+                        <td>Rp 3.000.000</td>
+                        <td>Rp 1.700.000</td>
+                        <td>Rp 750.000</td>
+                        <td>Rp 800.000</td>
+                        <td>Rp 500.000</td>
+                        <td>Rp 6.750.000</td>
+                    </tr>
+                    <tr>
+                        <td>Kelompok A</td>
+                        <td>Rp 3.000.000</td>
+                        <td>Rp 1.700.000</td>
+                        <td>Rp 750.000</td>
+                        <td>Rp 800.000</td>
+                        <td>Rp 500.000</td>
+                        <td>Rp 6.750.000</td>
+                    </tr>
+                    <tr>
+                        <td>Kelompok B</td>
+                        <td>Rp 3.000.000</td>
+                        <td>Rp 2.000.000</td>
+                        <td>Rp 750.000</td>
+                        <td>Rp 800.000</td>
+                        <td>Rp 500.000</td>
+                        <td>Rp 7.050.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <i class="bi bi-chevron-double-left mr-4" id="chevron-icon-left" style="cursor: pointer;"></i>
-        <i class="bi bi-chevron-double-right" id="chevron-icon-right" style="cursor: pointer;"></i>
+        <!-- <i class="bi bi-chevron-double-left mr-4" id="chevron-icon-left" style="cursor: pointer;"></i>
+        <i class="bi bi-chevron-double-right" id="chevron-icon-right" style="cursor: pointer;"></i> -->
 
         <hr style="border: 1px solid #000;">
         <h4>D. KETENTUAN LAIN</h4>
@@ -229,7 +231,19 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+
+
+                <div class="col-md-4 d-flex align-items-center">
+                    <div
+                        class="perFooterImg d-flex flex-column align-items-center justify-content-center text-center mb-4">
+                        <img src="assets/imgs/logo111.png" alt="" class="img-fluid mb-2">
+                        <p class="text-center text-light text-uppercase font-weight-bold mt-2">KB-TK Islam Raih Impian
+                        </p>
+                        <p class="text-light text-uppercase join-with-us">Join With Us!</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
                     <h4 class="my-4 text-white text-center">Contact Us</h4>
 
                     <div class="footerContactUs">
@@ -249,16 +263,6 @@
                                 Jl. Belem no.12 Jombang-Ciputat 15414
                             </p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <h4 class="my-4 text-center text-white">About</h4>
-                    <div class="footerAbout">
-                        <a href="" class="text-white">Artikel</a>
-                        <a href="" class="text-white">Galeri</a>
-                        <a href="" class="text-white">Contact Us</a>
-                        <a href="" class="text-white">Ekstrakulikuler</a>
                     </div>
                 </div>
 

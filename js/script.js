@@ -31,30 +31,25 @@ document.addEventListener("click", function (event) {
 });
 
 // icon geser di table
-document.addEventListener("DOMContentLoaded", function () {
-  const icon1 = document.getElementById("chevron-icon-right");
-  const icon2 = document.getElementById("chevron-icon-left");
-  const table = document.getElementById("financial-table");
-  const container = document.querySelector(".container");
-  let shiftAmount = 50;
+const wrapper = document.getElementById("financial-table").parentElement;
 
-  icon1.addEventListener("click", function () {
-    if (window.innerWidth < 1000) {
-      let currentTransform = table.style.transform
-        ? parseInt(table.style.transform.match(/-?\d+/)[0])
-        : 0;
-      let newTransform = currentTransform - shiftAmount;
-      table.style.transform = `translateX(${newTransform}px)`;
-    }
-  });
+wrapper.style.overflowX = "auto";
 
-  icon2.addEventListener("click", function () {
-    if (window.innerWidth < 1000) {
-      let currentTransform = table.style.transform
-        ? parseInt(table.style.transform.match(/-?\d+/)[0])
-        : 0;
-      let newTransform = currentTransform + shiftAmount;
-      table.style.transform = `translateX(${newTransform}px)`;
-    }
-  });
+let isDown = false;
+let startX;
+let scrollLeft;
+
+wrapper.addEventListener("mousedown", (e) => {
+  isDown = true;
+  startX = e.pageX;
+  scrollLeft = wrapper.scrollLeft;
+});
+
+document.addEventListener("mouseup", () => (isDown = false));
+document.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX;
+  const walk = (x - startX) * 3;
+  wrapper.scrollLeft = scrollLeft - walk;
 });
